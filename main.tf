@@ -7,6 +7,15 @@ terraform {
       version = "~> 3.0" # Keeps it compatible with stable 3.x syntax
     }
   }
+
+   # ADD THIS BACKEND BLOCK
+  backend "remote" {
+    organization = "Businesssystems14545"  # Replace with your Terraform Cloud organization name
+    
+    workspaces {
+      name = "dbsetup-workspace"    # Choose your workspace name
+    }
+  }
 }
 
 # 2. Configure the Microsoft Azure Provider
