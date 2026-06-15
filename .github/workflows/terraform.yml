@@ -62,7 +62,7 @@ jobs:
       run:
         shell: bash
         # 🟢 ADD THIS LINE BELOW AND UPDATE THE PATH TO MATCH YOUR FOLDER
-        working-directory: ./terraform
+        working-directory: ./Terraform
 
 
 
